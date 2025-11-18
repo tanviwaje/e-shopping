@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #ff6600;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.cart-icon {
+    cursor: pointer;
+    background: #ff6600;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #ff6600, #ff9900);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background: white;
+    color: #ff6600;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* PRODUCTS */
+.product-section {
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ff6600;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* CART SIDEBAR */
+.cart-sidebar {
+    width: 300px;
+    background: white;
+    position: fixed;
+    right: -350px;
+    top: 0;
+    height: 100%;
+    box-shadow: -4px 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.cart-sidebar.show {
+    right: 0;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: #222;
+    color: white;
+}
